@@ -30,7 +30,7 @@ public class BlogPostController {
         return "blogpost/new";
     }
 
-    @PostMapping(value = "/blogsposts")
+    @PostMapping(value = "/blogposts")
     public String addNewBlogPost(BlogPost blogPost, Model model) {
         blogPostRepository.save(blogPost);
         posts.add(blogPost);
