@@ -38,6 +38,18 @@
         </div>
     </div>
 
+    <script>
+        // Delete confirmation on click
+        function myFunction() {
+            var txt;
+            if (confirm("want to delete!")) {
+                text = "Deleted!"
+            } else {
+                text = "Cancel!"
+            }
+        }
+    </script>
+
     <div th:replace="/fragments/styling :: body-links"></div>
 </body>
 
