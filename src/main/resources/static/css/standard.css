@@ -23,3 +23,6 @@ body{
 .panel-body {
     background-color: #e2aa60;
 }
+input {
+    color: #000;
+}
