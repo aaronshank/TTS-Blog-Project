@@ -10,9 +10,13 @@ The in-class slides but these bonus features :
 I finished both the challenges, here are some notes if you're following along:
 
 * To start off, I changed all (*I hope all at least*) the `<a>` tags outside of `<button>` to go inside them.
-    * The dimensions of `<a>` were exceeding `<button>` and it was just easier to do it this way without spending time looking up CSS.
+    * The dimensions of `<a>` were exceeding `<button>`, and it was just easier to do it this way without spending time looking up CSS.
     * So for clicking on the buttons, if you go to the outermost edge, some of them won't work.
-        * Please click in the middle.
+        * Please click in the middle of all the buttons to be safe.
+
+* Also, the app.properties is available (with notes) since it doesn't have any API keys in them.
+    * The Bootstrap and jQuery version are the most up-to-date versions.
+        * *My VS Code was yelling at me to use them instead of the older versions in the slides.*
 
 * The first part was not that difficult, just copy - paste code that's alread in our file and change one word.
     * This is found in result.html. *(TTS-Blog-Project/src/main/resources/templates/blogpost/result.html)*
