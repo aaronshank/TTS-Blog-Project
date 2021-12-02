@@ -25,6 +25,7 @@ I finished both the challenges, here are some notes if you're following along:
         <button class="btn btn-primary"><a th:href="@{'/blogposts/{id}'(id=${blogPost.id})}">Edit
             Post</a></button>
         ```
+        * In the `th:href`, notice the `blogPost.id` at the end. That's what needed to be changed since the first time we used this, we were doing it inside a ThymeLeaf forEach loop where it was called `blog`.
 
 * The second part I did with JavaScript, but also commented beneath is a version of the same thing but without needing JavaScript, purely HTML.
     * Both of these are in index.html. *(TTS-Blog-Project/src/main/resources/templates/blogpost/index.html)*
