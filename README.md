@@ -6,6 +6,7 @@ Bonus Features :
 * Add JS/jQuery to create a confirm pop-up when trying to delete a post.
 
 *I finished both the challenges, but the second part I did a work-around.*
+
 *Instead of using JavaScript or jQuery, I just put the conditional directly in the HTML.*
 
 *If you have any questions, reach out to me.*
