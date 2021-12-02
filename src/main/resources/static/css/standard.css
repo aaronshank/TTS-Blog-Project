@@ -1,28 +1,109 @@
-body{
-	background-color: #e2aa60;
+body {
+    background-color: #ddd3c6;
 }
 
-.container{
-	background-color: rgba(86, 109, 235, 0.8);
-    color: #fff;
-	margin-top: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 5px; 
-}
-.navbar-nav>li>a {
-    color: #fff !important;
-}
-.navbar {
-    background-color:rgba(86, 109, 235, 0.8);
-}
-.panel-default > .panel-heading, .panel-footer {
-    background-color:rgba(86, 109, 235, 0.8);
+.container {
     color: #000;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    width: 50% !important;
+    text-align: center !important;
 }
+
+a {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.form-control {
+    margin-bottom: 0.5rem !important;
+}
+
+.navbar {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    border: 0.15rem solid #000 !important;
+    border-radius: 0.25rem !important;
+}
+
+.navbar, .navbar .container-fluid {
+    background-color: #d3c6dd !important;
+}
+
+.card-footer {
+    background-color: #c6ddd3 !important;
+    border: 2px solid #000 !important;
+    border-radius: 1rem !important;
+    width: 50% !important;
+    margin-left: 25% !important;
+}
+
 .panel-body {
-    background-color: #e2aa60;
+    background-color: #ddd3c6;
 }
+
+.panel-heading {
+    border-bottom: 2px solid #000 !important;
+}
+.container-new {
+    background-color: rgb(233, 190, 170);
+    border: 2px solid #000 !important;
+    border-radius: 1rem !important;
+}
+.panel {
+    text-align: center !important;
+    border: 2px solid #000 !important;
+    border-radius: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 1rem !important;
+    background-color: rgb(233, 190, 170);
+}
+
+.panel-footer a button {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
 input {
     color: #000;
+}
+
+#navSubmitButton {
+    color: #000 !important;
+    font-size: 1.25rem !important;
+}
+
+.navbar-nav .nav-link {
+    color: #000 !important;
+    font-size: 1.25rem !important;
+}
+
+.navbar-brand {
+    color: #000 !important;
+    margin-right: 2rem !important;
+}
+
+.panel {
+    align-items: center !important;
+    margin: 0 auto;
+}
+
+.panel-index {
+    width: 50% !important;
+}
+
+.card-footer {
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
+
+.btn-light:hover {
+    background: #e0e0e0 !important;
+    border-color: #e0e0e0 !important;
+}
+
+.btn-primary>a {
+    color: #fff !important;
 }

@@ -3,47 +3,74 @@
 
 <head>
     <title>Blog Project</title>
-    <div th:replace="/fragments/styling :: head-style" ></div>
+    <div th:replace="/fragments/styling :: head-style"></div>
 </head>
 
 <body>
     <div th:fragment="navbar">
-        <nav class="navbar navbar-default">
+        <!-- <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a class="navbar-brand" th:href="@{/}">Back To Home Page</a></li>
+                        <li><a class="navbar-brand" th:href="@{/}">Home</a></li>
                         <li><a th:href="@{/blogposts/new}">Submit a New Blog Post</a></li>
                     </ul>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            <a href="#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false">User Profile <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" th:href="@{/}">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="nav-item">
+                            <a th:href="@{/blogposts/new}" id="navSubmitButton">Submit a New Blog Post</a>
+                        </div>
+                    </div>
+                    <div class="navbar-nav" style="list-style: none;">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Aaron Shank
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://github.com/aaronshank" target="_blank">GitHub</a>
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/aaron-shank/" target="_blank">LinkedIn</a>
+                                <!-- <hr class="dropdown-divider">
+                                <a class="dropdown-item" href="#">Something else here</a> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
 
-    <div th:replace="/fragments/styling :: body-links" ></div>
+    <div th:replace="/fragments/styling :: body-links"></div>
 </body>
 
 </html>
