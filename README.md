@@ -18,7 +18,7 @@ I finished both the challenges, here are some notes if you're following along:
     * The Bootstrap and jQuery version are the most up-to-date versions.
         * *My VS Code was yelling at me to use them instead of the older versions in the slides.*
 
-* The first part was not that difficult, just copy - paste code that's alread in our file and change one word.
+* The first part was not that difficult, just copy - paste code that's already in our file and change one word.
     * This is found in result.html. *(TTS-Blog-Project/src/main/resources/templates/blogpost/result.html)*
     * The HTML needed :
         ```html
@@ -53,4 +53,4 @@ I finished both the challenges, here are some notes if you're following along:
 
 
 
-***If you have any questions, please reach out to me.***
+***If you have any questions, please reach out to me @ aaronshank93@gmail.com.***
